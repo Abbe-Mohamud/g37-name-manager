@@ -46,14 +46,17 @@ import java.util.Arrays;
     //Returns number of elements in the array
     public static int getSize() {
 
-        System.out.println(names.length);
-        return 0;
+        int size = names.length;
+        System.out.println(size);
+
+        return size;
     }
 
     //should completely empty the array
     public static void clear(){
-        for (int i = 0; i < names.length; i++)
-            names[i] = null;
+         names = new String[0];
+      //  for (int i = 0; i < names.length; i++)
+        //    names[i] = null;
         //  Arrays.fill(names, null); can be used also
     }
 
@@ -75,7 +78,7 @@ import java.util.Arrays;
                 return name;
             }
         }
-        return "Error: No match";
+        return "null";
 
     }
 

@@ -12,7 +12,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        //NameRepository nameRepository = new NameRepository();
+
 
         System.out.println("Arrays.toString(names) = " + Arrays.toString(names));
         System.out.println();
